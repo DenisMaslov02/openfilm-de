@@ -1,5 +1,5 @@
 /** Studio's languages: the app's own words (the menu bar, its dialogs, the install window) come in each of them. */
-export const LANGUAGES = ['en', 'zh-CN', 'ja', 'ko', 'es'];
+export const LANGUAGES = ['en', 'zh-CN', 'ja', 'ko', 'es', 'de'];
 
 /**
  * The language the app speaks: the one Studio's page is in (or was last shown in), else the system's as Studio picks

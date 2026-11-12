@@ -9,4 +9,5 @@ export const TURN_NOTICE_WORDS = {
   ja: { agent: 'エージェント', done: '{agent} が完了しました。', failed: '{agent} が中断しました：{error}', asking: '{agent} があなたの回答を待っています。' },
   ko: { agent: '에이전트', done: '{agent}이(가) 끝냈습니다.', failed: '{agent}이(가) 중단되었습니다: {error}', asking: '{agent}이(가) 답을 기다리고 있습니다.' },
   es: { agent: 'El agente', done: '{agent} ha terminado.', failed: '{agent} se detuvo: {error}', asking: '{agent} está esperando tu respuesta.' },
+  de: { agent: 'Der Agent', done: '{agent} ist fertig.', failed: '{agent} hat angehalten: {error}', asking: '{agent} wartet auf deine Antwort.' },
 };

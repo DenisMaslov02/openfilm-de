@@ -70,7 +70,9 @@ test('the menu speaks the page\'s language, else the system\'s as Studio picks i
   assert.equal(appLanguage(null, ['zh-Hant-TW', 'ja-JP']), 'ja');
   assert.equal(appLanguage('fr', ['ko-KR']), 'ko');
   assert.equal(appLanguage(undefined, ['es-MX']), 'es');
-  assert.equal(appLanguage(null, ['de-DE']), 'en');
+  assert.equal(appLanguage(null, ['de-DE']), 'de');
+  assert.equal(appLanguage(null, ['de-AT', 'en-US']), 'de');
+  assert.equal(appLanguage(null, ['fr-FR']), 'en');
   assert.equal(appLanguage(null), 'en');
   const [app, file] = build('zh-CN', 'darwin');
   assert.equal(app.label, 'OpenFilm');

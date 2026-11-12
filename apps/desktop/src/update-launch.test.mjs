@@ -119,11 +119,12 @@ test('the install window speaks the language Studio was last in, else the system
   assert.equal(installLanguage('ja', ['zh-Hans-CN']), 'ja');
   assert.equal(installLanguage(null, ['zh-Hans-CN', 'en-US']), 'zh-CN');
   assert.equal(installLanguage('fr', ['zh-TW', 'es-MX']), 'es');
-  assert.equal(installLanguage(null, ['de-DE']), 'en');
+  assert.equal(installLanguage(null, ['de-DE']), 'de');
+  assert.equal(installLanguage(null, ['fr-FR']), 'en');
   assert.deepEqual(installWords('zh-CN', { name: 'OpenFilm', version: '0.2.1' }), {
     lang: 'zh-CN', title: '正在安装 OpenFilm 0.2.1…', detail: '安装完成后 OpenFilm 会自动打开。',
   });
-  for (const language of ['en', 'zh-CN', 'ja', 'ko', 'es']) {
+  for (const language of ['en', 'zh-CN', 'ja', 'ko', 'es', 'de']) {
     const words = installWords(language, { name: 'OpenFilm', version: '9.9.9' });
     assert.match(words.title, /OpenFilm/);
     assert.match(words.title, /9\.9\.9/);

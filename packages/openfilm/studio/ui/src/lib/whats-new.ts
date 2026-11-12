@@ -310,6 +310,64 @@ export const RELEASE: ReleaseNotes = {
         "kind": "fixed",
         "text": "Corrige categorías repetidas, vistas de diseño estrechas, duraciones largas, unidades de tamaño, orden de versiones previas y etiquetas de herramientas MCP."
       }
+    ],
+    "de": [
+      {
+        "kind": "fixed",
+        "text": "Projekte wechseln in der Windows-Desktop-App zuverlässig, auch beim Öffnen eines Projekts über die Tab-Leiste."
+      },
+      {
+        "kind": "new",
+        "text": "Ein Projekt lässt sich als eigenständige Kopie in derselben Gruppe duplizieren."
+      },
+      {
+        "kind": "fixed",
+        "text": "Medien von Windows-Netzwerkfreigaben, die keine Systemverknüpfungen erlauben, lassen sich verknüpfen. Vorschau und Export nutzen die Originaldateien."
+      },
+      {
+        "kind": "fixed",
+        "text": "Geöffnete Editoren aktualisieren die Zeitleiste nach verpassten Dateimeldungen und behalten neuere Änderungen, wenn Anfragen in anderer Reihenfolge fertig werden."
+      },
+      {
+        "kind": "improved",
+        "text": "Videos auf der Leinwand zeigen im Ruhezustand ihr erstes Bild, spielen beim Darüberfahren ab und lassen sich als Standbild festhalten und direkt umbenennen."
+      },
+      {
+        "kind": "new",
+        "text": "Schreib-Elemente auf der Leinwand können Text, Bilder und Videos als Referenz bekommen."
+      },
+      {
+        "kind": "improved",
+        "text": "Ebenen mit Alt und Umschalt auswählen, passende Spuren der Zeitleiste ordnen (mit Rückgängig) und gemischte Tonwellen in Verbundclips sehen."
+      },
+      {
+        "kind": "improved",
+        "text": "Exporte für Schnittprogramme behalten den Look automatisch. Unterstützte Einstellungen bleiben bearbeitbar, und du kannst die Quellmedien verknüpfen oder kopieren."
+      },
+      {
+        "kind": "improved",
+        "text": "Entwürfe für Jianying und CapCut behalten bearbeitbare Untertitelstile und unterstützte Clip-Einstellungen. Beim Umbenennen eines Entwurfs bleiben kopierte und gerenderte Medien verknüpft."
+      },
+      {
+        "kind": "improved",
+        "text": "Sichtbare Vorschaubilder laden zuerst, pausierte Vorschauen aktualisieren sich, sobald Bilder eintreffen, und der Exportfortschritt ist über die Titelleiste des Projekts erreichbar."
+      },
+      {
+        "kind": "new",
+        "text": "Videos mit TBC mischief 1 und Grok Imagine Video 1.5 Lite über OpenRouter erzeugen, in Studio und in der CLI."
+      },
+      {
+        "kind": "fixed",
+        "text": "Windows-Exporte werden gerettet, wenn ein Encoder nach einem Browser-Absturz eine Datei kurz blockiert. Transparentes HEVC wird als Straight Alpha markiert."
+      },
+      {
+        "kind": "fixed",
+        "text": "OpenFilm verbindet sich neu, wenn Anmeldedaten ablaufen. Der Chatverlauf entfernt doppelte Sitzungen, behält Dateitypen und Endungen von Anhängen und kann eine gleich lange Textänderung rückgängig machen."
+      },
+      {
+        "kind": "fixed",
+        "text": "Behoben: doppelte Kategorien in der Bibliothek, schmale Layout-Vorschauen, lange Dauern bei Beispielen, Größeneinheiten, die Reihenfolge von Vorabversionen und Beschriftungen von MCP-Werkzeugen."
+      }
     ]
   }
 };

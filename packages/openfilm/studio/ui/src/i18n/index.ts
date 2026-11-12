@@ -13,6 +13,7 @@ import { es } from './es.ts';
 import { ja } from './ja.ts';
 import { ko } from './ko.ts';
 import { zhCN } from './zh-CN.ts';
+import { de } from './de.ts';
 
 export const LANGUAGES = [
   { code: 'en', name: 'English', words: en },
@@ -20,6 +21,7 @@ export const LANGUAGES = [
   { code: 'ja', name: '日本語', words: ja },
   { code: 'ko', name: '한국어', words: ko },
   { code: 'es', name: 'Español', words: es },
+  { code: 'de', name: 'Deutsch', words: de },
 ] as const;
 
 export type Language = (typeof LANGUAGES)[number]['code'];

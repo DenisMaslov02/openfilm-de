@@ -5,4 +5,5 @@ export const INSTALL_WORDS = {
   ja: { title: '{name} {version} をインストールしています…', detail: '完了すると {name} が自動的に開きます。' },
   ko: { title: '{name} {version} 설치 중…', detail: '설치가 끝나면 {name}이(가) 자동으로 열립니다.' },
   es: { title: 'Instalando {name} {version}…', detail: '{name} se abrirá de nuevo cuando termine.' },
+  de: { title: '{name} {version} wird installiert…', detail: '{name} öffnet sich wieder, wenn es fertig ist.' },
 };
