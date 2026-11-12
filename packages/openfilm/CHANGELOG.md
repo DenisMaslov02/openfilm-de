@@ -1,5 +1,19 @@
 # openfilm
 
+## 0.3.3
+
+### Patch Changes
+
+- [#398](https://github.com/openfilm/openfilm/pull/398) [`f59cd4e`](https://github.com/openfilm/openfilm/commit/f59cd4e0973feaf6917dcf3229b178b6baf9ad3f) Thanks [@WEBGRS](https://github.com/WEBGRS)! - Local transcripts and background removal start on Windows: there the runtime is told its folder as a file: address and runs on one thread. Other systems are unchanged.
+
+- [#447](https://github.com/openfilm/openfilm/pull/447) [`715e1a9`](https://github.com/openfilm/openfilm/commit/715e1a99721158baf128a8259df3acac6d5f8b2c) Thanks [@WEBGRS](https://github.com/WEBGRS)! - Studio: a project that uses a recording of hours opens and plays. A sound longer than thirty minutes is played as it streams instead of being decoded whole, which held some 5 GB for a 3-hour recording and crashed the editor's page; its waveform is drawn too, where one longer than about 70 minutes had none; and a sound request the browser gives up while its copy is being made no longer stops Studio.
+
+- [#411](https://github.com/openfilm/openfilm/pull/411) [`60a7ead`](https://github.com/openfilm/openfilm/commit/60a7eadf293db48e4271f61f682ce8fa189aef95) Thanks [@e3chovivi](https://github.com/e3chovivi)! - Render: a `--scale` that lands between two pixels writes an even picture. `--scale .667` made the browser's surface 1281 wide for a 1920 film: the MP4 was written, and re-encoding it failed with `width not divisible by 2` in every strict H.264 encoder, so the file could not go on to an editor or a second pass. The odd last column or row is cropped on the way in, so every other pixel stays as drawn; a scale that already lands even is untouched, and the summary now names the size the file actually has.
+
+- [#449](https://github.com/openfilm/openfilm/pull/449) [`2af0b43`](https://github.com/openfilm/openfilm/commit/2af0b43e36977d39de982250d9f0d90838aa6a87) Thanks [@rick-mingyu-liu](https://github.com/rick-mingyu-liu)! - Skills added to Favorites stay there after saving, reopening the library or switching projects.
+
+- [#450](https://github.com/openfilm/openfilm/pull/450) [`c5aca4f`](https://github.com/openfilm/openfilm/commit/c5aca4f5b7f6b7a9b57faa186f47b680da095565) Thanks [@WEBGRS](https://github.com/WEBGRS)! - Studio: a talking head exported to 剪映, CapCut, Premiere or Resolve stays one clip with its own sound. A video filling the frame (`object-fit: cover`, framed anywhere by `object-position`) is placed by the editor's own scale and position instead of being drawn into a new file with its sound split off beside it, and a style that only says what CSS does anyway (`object-fit: contain`, `opacity: 1`, as choosing Fit in the inspector writes) no longer counts as a look of its own. A fill its box cuts inside the frame, a stretch and any other look are drawn as before.
+
 ## 0.3.2
 
 ### Patch Changes

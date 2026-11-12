@@ -1,5 +1,14 @@
 # @openfilm/desktop
 
+## 0.3.3
+
+### Patch Changes
+
+- [#451](https://github.com/openfilm/openfilm/pull/451) [`3ab7f4b`](https://github.com/openfilm/openfilm/commit/3ab7f4bfca4aa812a344fa8f10dd0aa2460ce65d) Thanks [@WEBGRS](https://github.com/WEBGRS)! - Desktop: DeepSeek Harness installed with npm on Windows starts again. From 0.2.2 it loads an addon that runs only on the Electron builds it names, and the app started its script on its own Electron, which is not one of them, so it stopped as it started with "unsupported Electron runtime fingerprint". Its npm launcher is used now, which starts it on the Node that installed it.
+
+- Updated dependencies [[`f59cd4e`](https://github.com/openfilm/openfilm/commit/f59cd4e0973feaf6917dcf3229b178b6baf9ad3f), [`715e1a9`](https://github.com/openfilm/openfilm/commit/715e1a99721158baf128a8259df3acac6d5f8b2c), [`60a7ead`](https://github.com/openfilm/openfilm/commit/60a7eadf293db48e4271f61f682ce8fa189aef95), [`2af0b43`](https://github.com/openfilm/openfilm/commit/2af0b43e36977d39de982250d9f0d90838aa6a87), [`c5aca4f`](https://github.com/openfilm/openfilm/commit/c5aca4f5b7f6b7a9b57faa186f47b680da095565)]:
+  - openfilm@0.3.3
+
 ## 0.3.2
 
 ### Patch Changes
